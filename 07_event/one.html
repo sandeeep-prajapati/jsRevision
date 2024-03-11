@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+
+<body style="background-color: #414141; color:aliceblue">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li id="photoshop"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fdesktop-background&psig=AOvVaw1jVqxpUOz2BN8dz7J5viVv&ust=1710230726489000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIC66ong64QDFQAAAAAdAAAAABAE"
+                    alt=""  width="200px" >
+            </li>
+            <li><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fdesktop-background&psig=AOvVaw1jVqxpUOz2BN8dz7J5viVv&ust=1710230726489000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIC66ong64QDFQAAAAAdAAAAABAE"
+                alt=""  width="200px" id="japan">
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('photoshop').onclick = function(){
+    //     alert('owl clicked')
+    // }
+    // document.getElementById('photoshop').addEventListener('click',function(e){
+    //     console.log("clicked")
+    // },false)
+    document.getElementById('photoshop').addEventListener('click',function(e){
+        console.log("owl clicked")
+        e.stopPropagation()
+    },false)
+</script>
+
+</html>

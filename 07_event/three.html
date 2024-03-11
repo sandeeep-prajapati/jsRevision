@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark</title>
+</head>
+<body>
+    <h1>javascript</h1>
+    <button id = "start">Start</button>
+    <button id = "Stop">Stop</button>
+</body>
+<script>
+    const sayDate = function(str){
+        console.log(str, Date.now())
+    }
+    const intervaild = setInterval(sayDate,1000,"hi")
+    document.getElementById("Stop").addEventListener('click',function(){
+        clearInterval(intervaild)
+    })
+    document.getElementById("start").addEventListener('click',function(){
+    const intervaild = setInterval(sayDate,1000,"hi")
+
+    })
+</script>
+</html>
